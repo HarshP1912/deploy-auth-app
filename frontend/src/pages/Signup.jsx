@@ -24,7 +24,7 @@ function Signup() {
             return handleError("Enter Valid Credentials");
         }
         try {
-            const url = "http://localhost:8080/auth/signup";
+            const url = "https://deploy-auth-app-api-ten.vercel.app/auth/signup";
             const response = await fetch(url, {
                 method: "POST",
                 headers: {
