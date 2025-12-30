@@ -20,7 +20,7 @@ function Home() {
     }, []);
     const fetchProducts = async () => {
         try {
-            const url = "http://localhost:8080/products";
+            const url = "https://deploy-auth-app-api-ten.vercel.app/products";
             const response = await fetch(url, {
                 method: "GET",
                 headers: {
