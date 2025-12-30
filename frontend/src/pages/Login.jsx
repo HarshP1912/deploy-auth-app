@@ -23,7 +23,7 @@ function Login() {
             return handleError("Enter Valid Credentials");
         }
         try {
-            const url = "https://deploy-auth-app-api-ten.vercel.app/login";
+            const url = "https://deploy-auth-app-api-ten.vercel.app/auth/login";
             const response = await fetch(url, {
                 method: "POST",
                 headers: {
